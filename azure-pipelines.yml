@@ -16,7 +16,7 @@ strategy:
 steps:
 - task: CmdLine@2
   inputs:
-    script: 'where chromedriver.exe'
+    script: 'where chromedriver.exe /r d:\'
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(python.version)'
