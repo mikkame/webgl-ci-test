@@ -10,14 +10,8 @@ pool:
   vmImage: 'windows-2019'
 strategy:
   matrix:
-    Python27:
-      python.version: '2.7'
-    Python35:
-      python.version: '3.5'
     Python36:
       python.version: '3.6'
-    Python37:
-      python.version: '3.7'
 
 steps:
 - task: UsePythonVersion@0
@@ -33,3 +27,7 @@ steps:
 - script: |
     python test.py
   displayName: 'test'
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'screen.png'
+    artifact: 'screen.png'
