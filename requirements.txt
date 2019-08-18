@@ -2,4 +2,4 @@
 selenium
 
 ###### Requirements with Version Specifiers ######`
-chromedriver-binary == 75.0.3770.140.0
+chromedriver-binary == 74.0.3729.6.0
